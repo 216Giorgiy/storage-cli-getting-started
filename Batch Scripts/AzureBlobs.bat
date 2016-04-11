@@ -4,35 +4,35 @@ rem For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=7863
 rem For Cmdlet reference, see http://go.microsoft.com/fwlink/?LinkId=786320
 
 rem Provide the name of your Storage account.
-call AZURE_STORAGE_ACCOUNT=<StorageAccountName>
+set AZURE_STORAGE_ACCOUNT=<Storage Account Name>
 
 rem Provide the name of your Storage account.
-set AZURE_STORAGE_ACCESS_KEY=<StorageAccountKey>
+set AZURE_STORAGE_ACCESS_KEY=<Storage Account Key>
 
 rem Provide a name for your new container.
-set ContainerName=<ContainerName>
+set container_name=<Container Name>
 
 rem Provide a name for your new blob
-set BlobName=<BlobName>
+set blob_name=<Blob Name>
 
 rem Provide the full path to a file you want to upload.
-set FileToUpload=<C:\full\path\to\file>
+set file_to_upload=<C:\full\path\to\file>
 
 rem Provide the full path to a directory you wish to use for downloaded blobs.
-set DestinationFolder=<C:\DownloadedImages>
-mkdir %DestinationFolder%
+set destination_folder=<C:\DownloadedImages>
+mkdir %destination_folder%
 
 rem 1. Create a new container.
-call azure storage container create %ContainerName%
+call azure storage container create %container_name%
 
 rem 2. Upload a blob into a container.
-call azure storage blob upload %FileToUpload% %ContainerName% %BlobName%
+call azure storage blob upload %file_to_upload% %container_name% %blob_name%
 
 rem 3. List all blobs in a container.
-call azure storage container list %ContainerName%
+call azure storage container list %container_name%
 
 rem 4. Download blob:
-call azure storage blob download %ContainerName% %BlobName% %DestinationFolder%
+call azure storage blob download %container_name% %blob_name% %destination_folder%
 
-rem 5. Delete blob
-call azure storage blob delete %ContainerName% %BlobName%
+rem 5. Delete container
+call azure storage container delete %container_name%

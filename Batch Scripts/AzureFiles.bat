@@ -33,14 +33,4 @@ call azure storage share delete %share_name%
 echo "Deleting the downloaded file..."
 del %destination_file%
 
-
-echo "Resetting environment variables..."
-set AZURE_STORAGE_ACCOUNT=
-set AZURE_STORAGE_ACCESS_KEY=
-set share_name=
-set directory_name=
-set file_name=
-set destination_file=
-set source_path=
-
 echo "Done"
