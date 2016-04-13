@@ -6,7 +6,7 @@ rem For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
 rem Provide the name of your Storage account.
 set AZURE_STORAGE_ACCOUNT=<StorageAccountName>
 
-rem Provide the name of your Storage account.
+rem Provide your Storage account key.
 set AZURE_STORAGE_ACCESS_KEY=<StorageAccountKey>
 
 rem Provide a name for your new table.
@@ -20,3 +20,5 @@ call azure storage table list %table_name%
 
 rem 3. Remove table
 call azure storage table delete %table_name%
+
+echo "Done"

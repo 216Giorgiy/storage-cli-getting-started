@@ -7,7 +7,7 @@ rem For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
 rem Provide the name of your Storage account.
 set AZURE_STORAGE_ACCOUNT=<StorageAccountName>
 
-rem Provide the name of your Storage account.
+rem Provide your Storage account key.
 set AZURE_STORAGE_ACCESS_KEY=<StorageAccountKey>
 
 rem Provide a name for your new queue.
@@ -24,3 +24,5 @@ call azure storage queue list --prefix *
 
 rem 4. Remove queue
 call azure storage queue delete %queue_name%
+
+echo "Done"

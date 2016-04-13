@@ -6,13 +6,13 @@ rem For Cmdlet reference, see http://go.microsoft.com/fwlink/?LinkId=786320
 rem Provide the name of your Storage account.
 set AZURE_STORAGE_ACCOUNT=<Storage Account Name>
 
-rem Provide the name of your Storage account.
+rem Provide your Storage account key.
 set AZURE_STORAGE_ACCESS_KEY=<Storage Account Key>
 
 rem Provide a name for your new container.
 set container_name=<Container Name>
 
-rem Provide a name for your new blob
+rem Provide a name for your new blob.
 set blob_name=<Blob Name>
 
 rem Provide the full path to a file you want to upload.
@@ -29,10 +29,12 @@ rem 2. Upload a blob into a container.
 call azure storage blob upload %file_to_upload% %container_name% %blob_name%
 
 rem 3. List all blobs in a container.
-call azure storage container list %container_name%
+call azure storage blob list %container_name%
 
-rem 4. Download blob:
+rem 4. Download blob.
 call azure storage blob download %container_name% %blob_name% %destination_folder%
 
 rem 5. Delete container
 call azure storage container delete %container_name%
+
+echo "Done"
