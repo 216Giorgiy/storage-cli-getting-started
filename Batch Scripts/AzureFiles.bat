@@ -1,6 +1,6 @@
 rem Azure Storage File Sample - Demonstrates how to use the File Storage service.
-rem For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=785077
-rem For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
+rem For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786322
+rem For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=786325
 
 set AZURE_STORAGE_ACCOUNT=<Storage Account Name>
 set AZURE_STORAGE_ACCESS_KEY=<Storage Account Key>

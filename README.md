@@ -15,7 +15,7 @@ get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
 
 1. Download and install Azure CLI from the [Downloads](http://go.microsoft.com/fwlink/?LinkId=786341) page. Once the Azure CLI has been installed, you will be able to use the azure command from your command-line interface (Bash, Terminal, Command prompt) to access the Azure CLI commands.
 2. Download or clone this repo.
-3. Choose the script that's most appropriate for you. This repo provides batch scripts for Windows Command Line and shell scripts for Mac and Linux terminals.
+3. Edit a script you would like to use. This repo provides batch scripts for Windows Command Line and shell scripts for Mac and Linux terminals.
 4. Within the script, provide the appropriate values for each variable (e.g. Storage Account Name, Storage Account Key, etc.) Note: The angled brackets should not be included in the values you provide.
 5. Run the script in your terminal of choice. For example, in Windows Command Line: `C:\storage-cli-getting-started\Batch Scripts>AzureBlobs.bat`.
 

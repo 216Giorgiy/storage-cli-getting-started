@@ -2,17 +2,17 @@
 
 # Azure Table Service Sample - Demonstrates how to perform common tasks using the Microsoft Azure Table storage
 # including creating, listing, and deleting tables.
-# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786321
-# For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
+# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786322
+# For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=786325
 
 # Provide the name of your Storage account.
-export AZURE_STORAGE_ACCOUNT=<Storage Account Name>
+export AZURE_STORAGE_ACCOUNT="<Storage Account Name>"
 
 # Provide your Storage account key.
-export AZURE_STORAGE_ACCESS_KEY=<Storage Account Key>
+export AZURE_STORAGE_ACCESS_KEY="<Storage Account Key>"
 
 # Provide a name for your new table.
-table_name=<Table Name>
+table_name="<Table Name>"
 
 printf "\n1. Create a new table.\n"
 azure storage table create $table_name

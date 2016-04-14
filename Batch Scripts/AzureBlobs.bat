@@ -1,7 +1,7 @@
 rem Azure Storage Blob Sample - Demonstrates how to use the Blob Storage service.
 rem Blob storage stores unstructured data such as text, binary data, documents or media files.
-rem For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786321
-rem For Cmdlet reference, see http://go.microsoft.com/fwlink/?LinkId=786320
+rem For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786322
+rem For Cmdlet reference, see http://go.microsoft.com/fwlink/?LinkId=786325
 
 rem Provide the name of your Storage account.
 set AZURE_STORAGE_ACCOUNT=<Storage Account Name>

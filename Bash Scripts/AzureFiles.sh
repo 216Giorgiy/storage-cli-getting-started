@@ -1,29 +1,29 @@
 #!/usr/bin/env bash
 
 # Azure Storage File Sample - Demonstrates how to use the File Storage service.
-# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=785077
-# For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
+# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786322
+# For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=786325
 
 # Provide the name of your Storage account.
-export AZURE_STORAGE_ACCOUNT=<Storage Account Name>
+export AZURE_STORAGE_ACCOUNT="<Storage Account Name>"
 
 # Provide your Storage account key.
-export AZURE_STORAGE_ACCESS_KEY=<Storage Account Key>
+export AZURE_STORAGE_ACCESS_KEY="<Storage Account Key>"
 
 # Provide a name for your new share
-share_name=<Share Name>
+share_name="<Share Name>"
 
 # Provide a name for you new directory
-directory_name=<Directory Name>
+directory_name="<Directory Name>"
 
 # Provide the full path to the file you want to upload.
-full_path_to_file=</full/path/to/file>
+full_path_to_file="</full/path/to/file>"
 
 # Provide the name of the file. NOTE: This should be an exact match to the file name you've provided in full_path_to_file.
-file_name=<File Name>
+file_name="<file>"
 
 # Provide the full path for a new local directory
-destination_path=<~/DownloadedFiles>
+destination_path="<~/DownloadedFiles>"
 mkdir $destination_path
 
 printf "\n1. Create a new share.\n"

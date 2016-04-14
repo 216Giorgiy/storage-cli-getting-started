@@ -1,8 +1,8 @@
 rem Azure Queue Service Sample - The Queue Service provides reliable messaging for workflow processing and for communication
 rem between loosely coupled components of cloud services. This sample demonstrates how to perform common tasks including
 rem creating, listing, and deleting queues.
-rem For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786321
-rem For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
+rem For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786322
+rem For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=786325
 
 rem Provide the name of your Storage account.
 set AZURE_STORAGE_ACCOUNT=<StorageAccountName>
