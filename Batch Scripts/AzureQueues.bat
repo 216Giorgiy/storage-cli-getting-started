@@ -13,16 +13,16 @@ set AZURE_STORAGE_ACCESS_KEY=<StorageAccountKey>
 rem Provide a name for your new queue.
 set queue_name=<Queue Name>
 
-rem 1. Create a new queue.
+echo "1. Create a new queue."
 call azure storage queue create %queue_name%
 
-rem 2. Show details of the queue.
+echo "2. Show details of the queue."
 call azure storage queue show %queue_name%
 
-rem 3. List all queues.
+echo "3. List all queues."
 call azure storage queue list --prefix *
 
-rem 4. Remove queue
+echo "4. Remove queue"
 call azure storage queue delete %queue_name%
 
 echo "Done"

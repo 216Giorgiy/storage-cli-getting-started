@@ -20,21 +20,23 @@ set file_to_upload=<C:\full\path\to\file>
 
 rem Provide the full path to a directory you wish to use for downloaded blobs.
 set destination_folder=<C:\DownloadedImages>
-mkdir %destination_folder%
 
-rem 1. Create a new container.
+echo "1. Create a new container."
 call azure storage container create %container_name%
 
-rem 2. Upload a blob into a container.
+echo "2. Upload a blob into a container."
 call azure storage blob upload %file_to_upload% %container_name% %blob_name%
 
-rem 3. List all blobs in a container.
+echo "3. List all blobs in a container."
 call azure storage blob list %container_name%
 
-rem 4. Download blob.
+echo "4. List all blobs in a container (json)."
+call azure storage blob list --json %container_name%
+
+echo "5. Download blob."
 call azure storage blob download %container_name% %blob_name% %destination_folder%
 
-rem 5. Delete container
+echo "6. Delete container"
 call azure storage container delete %container_name%
 
 echo "Done"

@@ -12,13 +12,13 @@ set AZURE_STORAGE_ACCESS_KEY=<StorageAccountKey>
 rem Provide a name for your new table.
 set table_name=<Table Name>
 
-rem 1. Create a new table.
+echo "1. Create a new table."
 call azure storage table create %table_name%
 
-rem 2. List all tables.
+echo "2. List all tables."
 call azure storage table list %table_name%
 
-rem 3. Remove table
+echo "3. Remove table"
 call azure storage table delete %table_name%
 
 echo "Done"

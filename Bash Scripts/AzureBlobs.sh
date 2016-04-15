@@ -22,7 +22,6 @@ file_to_upload="</full/path/to/file>"
 
 # Provide the full path to a directory you wish to use for downloaded blobs.
 destination_folder="<~/DownloadedBlobs>"
-mkdir $destination_folder
 
 printf "\n1. Create a new container.\n"
 azure storage container create $container_name
@@ -33,10 +32,13 @@ azure storage blob upload $file_to_upload $container_name $blob_name
 printf "\n3. List all blobs in a container.\n"
 azure storage blob list $container_name
 
-printf "\n4. Download blob.\n"
+printf "\n4. List all blobs in a container (json).\n"
+azure storage blob list --json $container_name
+
+printf "\n5. Download blob.\n"
 azure storage blob download $container_name $blob_name $destination_folder/$blob_name
 
-printf "\n5. Delete container.\n"
+printf "\n6. Delete container.\n"
 azure storage container delete $container_name
 
 # Remove environment variables
