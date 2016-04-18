@@ -8,8 +8,6 @@ author: micurd-msft
 
 Demonstrates how to use the Azure Storage service in Azure CLI (v0.9.19).
 
-> Azure has two different deployment models for creating and working with resources:  [Azure Resource Manager (ARM) and Classic](https://azure.microsoft.com/en-us/documentation/articles/resource-manager-deployment-model/). The AzureManagement scripts use ARM which is recommended for most new deployments.
-
 If you don't have a Microsoft Azure subscription you can
 get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
 
