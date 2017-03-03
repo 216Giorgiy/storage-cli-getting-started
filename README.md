@@ -6,7 +6,7 @@ author: micurd-msft
 
 # Getting Started with Azure Storage in Azure CLI
 
-Demonstrates how to use the Azure Storage service in Azure CLI (v0.9.19). If you are looking for a sample for the new, and enhanced Azure CLI 2.0, click [here](https://github.com/Azure-Samples/storage-cli-2-getting-started/).
+Demonstrates how to use the Azure Storage service in Azure CLI (v0.9.19). If you are looking for a sample with the new, and enhanced Azure CLI 2.0, click [here](https://github.com/Azure-Samples/storage-cli-2-getting-started/).
 
 If you don't have a Microsoft Azure subscription you can
 get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
