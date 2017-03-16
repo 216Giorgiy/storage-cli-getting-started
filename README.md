@@ -1,7 +1,7 @@
 ---
 services: storage
 platforms: cli
-author: micurd-msft
+author: seguler
 ---
 
 # Getting Started with Azure Storage in Azure CLI
